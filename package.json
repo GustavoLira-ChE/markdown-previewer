@@ -1,0 +1,26 @@
+{
+  "name": "markdown-previewer",
+  "version": "1.0.0",
+  "description": "Application to build markdom ans check how it looks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoLira-ChE/markdown-previewer.git"
+  },
+  "keywords": [
+    "React",
+    "webpack",
+    "markdown",
+    "React",
+    "hooks"
+  ],
+  "author": "Gustavo Lira <gu.lirar23@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoLira-ChE/markdown-previewer/issues"
+  },
+  "homepage": "https://github.com/GustavoLira-ChE/markdown-previewer#readme"
+}
