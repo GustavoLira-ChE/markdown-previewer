@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import InputTextContext from "../context/InputTextContext";
 import { marked } from "marked";
 import DOMPurify from 'dompurify';
+import '../styles/previewerArea.css';
 
 const PreviewerArea = () => {
 
@@ -15,10 +16,10 @@ const PreviewerArea = () => {
     
     return(
         <div id="preview">
-            <h1>
+            <h2 className="previewerTitle">
                 Preview Area
-            </h1>
-            <p dangerouslySetInnerHTML={updateMarkdown()}></p>
+            </h2>
+            <div className="previewerDisplay" dangerouslySetInnerHTML={updateMarkdown()}></div>
         </div>
     );
 };
