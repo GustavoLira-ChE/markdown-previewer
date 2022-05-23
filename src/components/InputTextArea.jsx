@@ -1,17 +1,24 @@
 import React, {useContext} from "react";
 import InputTextContext from "../context/InputTextContext";
-import DOMPurify from "dompurify";
+import '../styles/inputTextArea.css';
 
 const InputTextArea = () => {
 
-    const { inputText ,inputTextHandler } = useContext(InputTextContext);
+    const { inputText ,inputTextHandler, clearInputText } = useContext(InputTextContext);
 
     return(
         <div id="editor">
-            <h1>
+            <h2 className="inputTextAreaTitle">
                 Input Text Area
-            </h1>
-            <textarea rows="4" cols="50" style={{resize: "none"}} onChange={inputTextHandler} value={inputText}></textarea>
+            </h2>
+            <textarea 
+                rows="4" 
+                cols="50" 
+                className="textAreaInput"
+                onChange={inputTextHandler} 
+                value={inputText}>
+            </textarea>
+            <button className="clearButton" onClick={clearInputText}>Clear</button>
         </div>
     );
 };

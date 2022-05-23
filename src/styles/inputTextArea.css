@@ -1,0 +1,17 @@
+#editor {
+    flex: 2;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputTextAreaTitle {
+    color: var(--secondary-color);
+}
+
+.textAreaInput {
+    resize: none;
+    height: 80vh;
+    min-width: 300px;
+}
