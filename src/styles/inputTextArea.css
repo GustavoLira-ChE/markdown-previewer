@@ -13,5 +13,5 @@
 .textAreaInput {
     resize: none;
     height: 80vh;
-    min-width: 300px;
+    min-width: clamp(18.75rem, 7.5rem + 60vw, 37.5rem);
 }

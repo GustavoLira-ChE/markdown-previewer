@@ -1,3 +1,5 @@
 .main-title{
     color: var(--primary-color);
+    margin-top: 0;
+    padding: 16px;
 }
