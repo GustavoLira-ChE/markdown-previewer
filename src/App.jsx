@@ -4,15 +4,18 @@ import PreviewerArea from "./components/PreviewerArea";
 import Header from "./containers/Header";
 import PreSyntaxUseList from "./containers/PreSyntaxUseList";
 import { InputTextProvider } from "./context/InputTextContext";
+import './styles/global.css'
 
 const App = () => {
     return(
         <div>
             <InputTextProvider>
                 <Header />
-                <InputTextArea />
-                <PreviewerArea />
-                <PreSyntaxUseList />
+                <div className="body-container">
+                    <InputTextArea />
+                    <PreviewerArea />
+                    <PreSyntaxUseList />
+                </div>
             </InputTextProvider>
         </div>
     );
