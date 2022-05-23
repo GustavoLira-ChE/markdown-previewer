@@ -34,7 +34,7 @@ const PreSyntaxUseList = () => {
             <h2 className='prebuiltsTitle'>PreBuilts</h2>
             <ul>
                 {syntaxObject.map(buttonItem => (
-                    <li>
+                    <li key={buttonItem.id}>
                         <button className='button-syntax' onClick={addSyntax} value={buttonItem.buttonValue} key={buttonItem.id}>{buttonItem.buttonTitle}</button>
                     </li>
                 ))}
