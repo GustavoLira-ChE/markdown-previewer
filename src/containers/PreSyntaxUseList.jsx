@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
 import InputTextContext from '../context/InputTextContext';
+import '../styles/preSyntaxUseList.css';
 
 const syntaxObject = [
     {id: 1, buttonTitle: "Heading1", buttonValue: " \n # Heading level 1"},
@@ -30,7 +31,7 @@ const PreSyntaxUseList = () => {
     
     return (
         <aside className='prebuilt-syntax'>
-            <h2 className='prebiltsTitle'>PreBuilts</h2>
+            <h2 className='prebuiltsTitle'>PreBuilts</h2>
             <ul>
                 {syntaxObject.map(buttonItem => (
                     <li>
