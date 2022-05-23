@@ -54,10 +54,15 @@ const useInputText = () => {
         setInputText(inputText + value);
     }
 
+    const clearInputText = () => {
+      setInputText(``);
+    }
+
     return{
         inputText,
         inputTextHandler,
-        addSyntaxPreBuild
+        addSyntaxPreBuild,
+        clearInputText
     }
 };
 
