@@ -6,7 +6,7 @@ const ShowButton = ({buttonName ,state, func}) => {
     
     return (
         <li className='li-button'>
-            {state ? <button className='showButton' disabled>{buttonName}</button> : <button className='showButton' onClick={func}>{buttonName}</button>}
+            {state ? <button className='disabledButton' disabled>{buttonName}</button> : <button className='showButton' onClick={func}>{buttonName}</button>}
         </li>
     );
 };
