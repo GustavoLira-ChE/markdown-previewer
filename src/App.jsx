@@ -1,21 +1,18 @@
 import React from "react";
-import InputTextArea from "./components/InputTextArea";
-import PreviewerArea from "./components/PreviewerArea";
+import BodyApp from "./containers/BodyApp";
 import Header from "./containers/Header";
-import PreSyntaxUseList from "./containers/PreSyntaxUseList";
 import { InputTextProvider } from "./context/InputTextContext";
+import { ToggleContextProvider } from "./context/ToggleContext";
 import './styles/global.css'
 
 const App = () => {
     return(
         <div>
             <InputTextProvider>
-                <Header />
-                <div className="body-container">
-                    <InputTextArea />
-                    <PreviewerArea />
-                    <PreSyntaxUseList />
-                </div>
+                <ToggleContextProvider>
+                    <Header />
+                    <BodyApp />    
+                </ToggleContextProvider>
             </InputTextProvider>
         </div>
     );
