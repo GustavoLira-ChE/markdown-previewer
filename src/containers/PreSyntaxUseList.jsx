@@ -20,7 +20,24 @@ const syntaxObject = [
     > - Revenue was off the chart.
     > - Profits were higher than ever.
     >
-    >  *Everything* is going according to **plan**.`}
+    >  *Everything* is going according to **plan**.`},
+    {id: 12, buttonTitle: 'Ordered List', buttonValue:`\n 1. First item \n 2. Second item \n 3. Third item`},
+    {id: 13, buttonTitle:'Unordered List', buttonValue:`\n- First item \n- Second item \n- Third item`},
+    {id:14, buttonTitle:'Link', buttonValue:`\n [title](https://www.example.com)`},
+    {id: 15, buttonTitle:'Image', buttonValue:`\n ![alt text](image.jpg)`},
+    {id:16, buttonTitle:'Table', buttonValue:` \n | Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |`},
+    {id: 17, buttonTitle:'Footnote', buttonValue:`
+    \n Here's a sentence with a footnote. [^1] \n [^1]: This is the footnote.`},
+    {id: 18, buttonTitle:'Definition List', buttonValue:`term \n : definition`},
+    {id: 19, buttonTitle:'Strikethrough', buttonValue:`\n ~~The world is flat.~~`},
+    {id: 20, buttonTitle:'Task List', buttonValue:`\n - [x] Write the press release \n- [ ] Update the website \n- [ ] Contact the media`},
+    {id: 21, buttonTitle:'Highlight', buttonValue:`\n ==very important words==`},
+    {id: 22, buttonTitle:'Subscript', buttonValue:`H~2~O`},
+    {id: 23, buttonTitle:'Superscript', buttonValue:`	X^2^`},
+
 ]
 
 const PreSyntaxUseList = () => {
@@ -38,7 +55,7 @@ const PreSyntaxUseList = () => {
                 <h2 className='prebuiltsTitle'>PreBuilts</h2>
                 <CloseButton func={handleBuiltInToggle}/>
             </div>
-            <ul>
+            <ul className='buttonList'>
                 {syntaxObject.map(buttonItem => (
                     <li key={buttonItem.id}>
                         <button className='button-syntax' onClick={addSyntax} value={buttonItem.buttonValue} key={buttonItem.id}>{buttonItem.buttonTitle}</button>
