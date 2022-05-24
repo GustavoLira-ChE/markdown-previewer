@@ -1,6 +1,8 @@
 import React, {useContext} from 'react';
+import CloseButton from '../components/CloseButton';
 import InputTextContext from '../context/InputTextContext';
 import '../styles/preSyntaxUseList.css';
+import ToggleContext from '../context/ToggleContext';
 
 const syntaxObject = [
     {id: 1, buttonTitle: "Heading1", buttonValue: " \n # Heading level 1"},
@@ -24,6 +26,7 @@ const syntaxObject = [
 const PreSyntaxUseList = () => {
 
     const { addSyntaxPreBuild } = useContext(InputTextContext);
+    const { handleBuiltInToggle } = useContext(ToggleContext);
 
     const addSyntax = (e) => {
         addSyntaxPreBuild(e.target.value);
@@ -31,7 +34,10 @@ const PreSyntaxUseList = () => {
     
     return (
         <aside className='prebuilt-syntax'>
-            <h2 className='prebuiltsTitle'>PreBuilts</h2>
+            <div className='prebuiltHeader'>
+                <h2 className='prebuiltsTitle'>PreBuilts</h2>
+                <CloseButton func={handleBuiltInToggle}/>
+            </div>
             <ul>
                 {syntaxObject.map(buttonItem => (
                     <li key={buttonItem.id}>

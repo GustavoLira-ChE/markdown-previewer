@@ -18,6 +18,12 @@
     margin-bottom: 4px;
 }
 
+.prebuiltHeader{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
 .prebuilt-syntax ul li{
     list-style: none;
 }
