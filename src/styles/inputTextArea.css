@@ -6,12 +6,19 @@
     align-items: center;
 }
 
-.inputTextAreaTitle {
+.editorHeader{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    width: clamp(18.75rem, 7.5rem + 60vw, 37.5rem);
+}
+
+.editorTitle {
     color: var(--secondary-color);
 }
 
 .textAreaInput {
     resize: none;
     height: 80vh;
-    min-width: clamp(18.75rem, 7.5rem + 60vw, 37.5rem);
+    width: clamp(18.75rem, 7.5rem + 60vw, 37.5rem);
 }

@@ -1,16 +1,20 @@
 import React, {useContext} from "react";
 import InputTextContext from "../context/InputTextContext";
+import ToggleContext from "../context/ToggleContext";
 import '../styles/inputTextArea.css';
+import CloseButton from '../components/CloseButton';
 
 const InputTextArea = () => {
 
     const { inputText ,inputTextHandler, clearInputText } = useContext(InputTextContext);
+    const { handleEditorToggle} = useContext(ToggleContext);
 
     return(
         <div id="editor">
-            <h2 className="inputTextAreaTitle">
-                Input Text Area
-            </h2>
+            <div className="editorHeader">
+                <h2 className="editorTitle">Input Text Area</h2>
+                <CloseButton func={handleEditorToggle} />
+            </div>
             <textarea 
                 rows="4" 
                 cols="50" 
