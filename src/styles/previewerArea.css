@@ -5,6 +5,12 @@
     align-items: center;
     padding: 16px;
 }
+.previewHeader{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+}
 .previewerTitle{
     color: var(--secondary-color);
 }
