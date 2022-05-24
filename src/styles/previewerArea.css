@@ -16,5 +16,6 @@
 }
 
 .previewerDisplay{
-    min-width: 300px;
+    width: clamp(18.75rem, 16.5441rem + 11.7647vw, 31.25rem);
+    background-color: white;
 }

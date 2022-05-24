@@ -16,6 +16,7 @@
     font-size: 16px;
     border-radius: 8px;
     margin-bottom: 4px;
+    width: 200px;
 }
 
 .prebuiltHeader{
@@ -24,8 +25,13 @@
     justify-content: space-between;
 }
 
-.prebuilt-syntax ul li{
+ li{
     list-style: none;
+}
+
+.prebuilt-syntax ul{
+    height: 70vh;
+    overflow-y: scroll;
 }
 
 .button-syntax:hover{

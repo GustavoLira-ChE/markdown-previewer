@@ -20,5 +20,5 @@
 .textAreaInput {
     resize: none;
     height: 70vh;
-    width: clamp(18.75rem, 7.5rem + 60vw, 37.5rem);
+    width: clamp(18.75rem, 16.5441rem + 11.7647vw, 31.25rem);
 }

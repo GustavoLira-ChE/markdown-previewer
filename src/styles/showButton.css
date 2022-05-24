@@ -20,3 +20,22 @@
 .showButton:hover{
     background-color: rgb(102, 218, 111);
 }
+
+.buttonList{
+    overflow-y: hidden;
+}
+
+.disabledButton{
+    background-color:  rgb(221, 221, 221);
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    align-self: center;
+    border: solid black 1px;
+}
