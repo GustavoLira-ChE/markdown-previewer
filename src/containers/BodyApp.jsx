@@ -9,9 +9,9 @@ const BodyApp = () => {
     const { editorToggle, previewerToggle, builtInToggle } = useContext(ToggleContext);
     return (
         <div className="body-container">
+            {builtInToggle && <PreSyntaxUseList />}
             {editorToggle && <InputTextArea />}
             {previewerToggle && <PreviewerArea />}
-            {builtInToggle && <PreSyntaxUseList />}
         </div>
     );
 };
