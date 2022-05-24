@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/closebutton.css';
 
-const CloseButton = () => {
+const CloseButton = ( {func} ) => {
     return (
-        <button className="closeButton">X</button>
+        <button className="closeButton" onClick={func}>X</button>
     );
 };
 
