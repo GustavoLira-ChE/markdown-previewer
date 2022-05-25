@@ -33,7 +33,7 @@ const syntaxObject = [
     \n Here's a sentence with a footnote. [^1] \n [^1]: This is the footnote.`},
     {id: 18, buttonTitle:'Definition List', buttonValue:`term \n : definition`},
     {id: 19, buttonTitle:'Strikethrough', buttonValue:`\n ~~The world is flat.~~`},
-    {id: 20, buttonTitle:'Task List', buttonValue:`\n - [x] Write the press release \n- [ ] Update the website \n- [ ] Contact the media`},
+    {id: 20, buttonTitle:'Task List', buttonValue:`\n [x] Write the press release \n [ ] Update the website \n [ ] Contact the media`},
     {id: 21, buttonTitle:'Highlight', buttonValue:`\n ==very important words==`},
     {id: 22, buttonTitle:'Subscript', buttonValue:`H~2~O`},
     {id: 23, buttonTitle:'Superscript', buttonValue:`	X^2^`},
@@ -57,7 +57,7 @@ const PreSyntaxUseList = () => {
             </div>
             <ul className='buttonList'>
                 {syntaxObject.map(buttonItem => (
-                    <li key={buttonItem.id}>
+                    <li className='builtIn-list' key={buttonItem.id}>
                         <button className='button-syntax' onClick={addSyntax} value={buttonItem.buttonValue} key={buttonItem.id}>{buttonItem.buttonTitle}</button>
                     </li>
                 ))}
