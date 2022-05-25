@@ -11,7 +11,6 @@ module.exports = {
     resolve: {
         extensions: [".js", ".jsx"]
     },
-    mode: "development",
     module: {
         rules: [
             {
@@ -45,9 +44,4 @@ module.exports = {
             filename: '[name].css'
         })
     ],
-    devServer: {
-        static: path.join(__dirname, "dist"),
-        port: 3002,
-        historyApiFallback: true,
-    }
 }
