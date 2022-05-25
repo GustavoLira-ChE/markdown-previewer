@@ -11,6 +11,7 @@ module.exports = {
     resolve: {
         extensions: [".js", ".jsx"]
     },
+    mode: 'production',
     module: {
         rules: [
             {
@@ -44,4 +45,9 @@ module.exports = {
             filename: '[name].css'
         })
     ],
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    },
 }
