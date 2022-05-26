@@ -16,8 +16,6 @@ const InputTextArea = () => {
                 <CloseButton func={handleEditorToggle} />
             </div>
             <textarea 
-                rows="4" 
-                cols="50" 
                 className="textAreaInput"
                 onChange={inputTextHandler} 
                 value={inputText}>
