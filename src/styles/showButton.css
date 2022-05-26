@@ -28,7 +28,7 @@
 .disabledButton{
     background-color:  rgb(221, 221, 221);
     border: none;
-    color: white;
+    color: var(--primary-color);
     padding: 4px 8px;
     text-align: center;
     text-decoration: none;
