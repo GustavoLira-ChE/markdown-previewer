@@ -1,16 +1,21 @@
 #editor {
     flex: 2;
-    padding: 16px;
+    height: 80vh;
+    padding: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: clamp(300px, 400px, 800px);
+    background: white;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    margin: 0 16px;
 }
 
 .editorHeader{
-    width: inherit;
+    width: -webkit-fill-available;
     display: flex;
     justify-content: space-between;
-    width: -webkit-fill-available;
 }
 
 .editorTitle {
@@ -19,6 +24,20 @@
 
 .textAreaInput {
     resize: none;
-    height: 70vh;
-    width: clamp(18.75rem, 16.5441rem + 11.7647vw, 31.25rem);
+    height: 65vh;
+    width: -webkit-fill-available;
+    padding: 8px;
+}
+
+.clearButton{
+    width: -webkit-fill-available;
+    padding: 8px 0;
+    text-align: center;
+    margin-top: 4px;
+    background-color: brown;
+    border: none;
+}
+
+.clearButton:hover{
+    background-color: rgb(221, 3, 3);
 }
