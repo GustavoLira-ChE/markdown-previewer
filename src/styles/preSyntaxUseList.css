@@ -1,12 +1,14 @@
 .prebuilt-syntax{
     flex: 1;
     padding: 16px;
+    width: 230px;
+    padding: 0px;
 }
 .prebuiltsTitle{
     color: var(--secondary-color);
 }
 .button-syntax{
-    background-color: var(--primary-color); /* Green */
+    background-color: var(--primary-color);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -27,11 +29,15 @@
 
  li{
     list-style: none;
+    width: inherit;    
 }
 
 .prebuilt-syntax ul{
     height: 70vh;
     overflow-y: scroll;
+    width: fit-content;
+    padding: 4px;
+    width: inherit;
 }
 
 .button-syntax:hover{
