@@ -5,9 +5,10 @@
 }
 
 :root{
-    --body-color: #fafbf9;
-    --primary-color: #ff5208;
-    --secondary-color: #383845;
+    --body-color: #68c7b3;
+    --primary-color: #154799;
+    --secondary-color: #eca796;
+    --third-color: #fdd47c;
 }
 
 html, body{
@@ -18,10 +19,6 @@ html, body{
 
 .body-container{
     display: flex;
-}
-
-@media (max-width: 1000px){
-    .body-container{
-        flex-direction: column;
-    }
+    padding: 0 32px;
+    flex-wrap: wrap;
 }
