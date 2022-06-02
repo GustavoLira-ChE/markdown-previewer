@@ -4,13 +4,13 @@ import useToggleButton from "../hooks/useToggleButton";
 const ToggleContext = React.createContext({});
 
 const ToggleContextProvider = ( {children} ) => {
-    const toggleObject = useToggleButton();
+  const toggleObject = useToggleButton();
     
-    return(
-        <ToggleContext.Provider value={toggleObject}>
-            {children}
-        </ToggleContext.Provider>
-    );
+  return(
+    <ToggleContext.Provider value={toggleObject}>
+      {children}
+    </ToggleContext.Provider>
+  );
 };
 
 export default ToggleContext;
