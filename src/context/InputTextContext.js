@@ -5,13 +5,13 @@ const InputTextContext = React.createContext({});
 
 const InputTextProvider = ( {children} ) => {
 
-    const textInputObject = useInputText();
+  const textInputObject = useInputText();
 
-    return(
-        <InputTextContext.Provider value={textInputObject}>
-            { children }
-        </InputTextContext.Provider>
-    );
+  return(
+    <InputTextContext.Provider value={textInputObject}>
+      { children }
+    </InputTextContext.Provider>
+  );
 };
 
 export default InputTextContext;

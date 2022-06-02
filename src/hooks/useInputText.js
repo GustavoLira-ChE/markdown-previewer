@@ -17,26 +17,26 @@ _italic_
 `;
 
 const useInputText = () => {
-    const [inputText, setInputText] = useState(placeholder);
+  const [inputText, setInputText] = useState(placeholder);
 
-    const inputTextHandler = (event) => {
-        setInputText(event.target.value);
-    }
+  const inputTextHandler = (event) => {
+    setInputText(event.target.value);
+  }
 
-    const addSyntaxPreBuild = (value) => {
-        setInputText(inputText + value);
-    }
+  const addSyntaxPreBuild = (value) => {
+    setInputText(inputText + value);
+  }
 
-    const clearInputText = () => {
-      setInputText(``);
-    }
+  const clearInputText = () => {
+    setInputText("");
+  }
 
-    return{
-        inputText,
-        inputTextHandler,
-        addSyntaxPreBuild,
-        clearInputText
-    }
+  return{
+    inputText,
+    inputTextHandler,
+    addSyntaxPreBuild,
+    clearInputText
+  }
 };
 
 export default useInputText;
